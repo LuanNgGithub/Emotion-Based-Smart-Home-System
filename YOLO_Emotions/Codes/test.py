@@ -3,8 +3,8 @@ import time
 from ultralytics import YOLO
 
 # Load YOLO models: face detection model and emotion recognition model
-face_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/yolov8n_face.pt')  # Face detection model
-emotion_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/best_yolo11x.pt')  # Emotion recognition model
+face_model = YOLO('/YOLO_Emotions/Codes/weights/yolo_face.pt')  # Face detection model
+emotion_model = YOLO('/YOLO_Emotions/Codes/weights/yolo_emotion.pt')  # Emotion recognition model
 
 # Open the camera
 cap = cv2.VideoCapture(0)
