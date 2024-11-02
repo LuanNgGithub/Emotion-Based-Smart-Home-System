@@ -1,2 +1,2 @@
-# Emotion-Based Smart Home System
-Repository for Emotion-Based Smart Home System
+# Emotion-Adaptive Smart Home
+Repository for Emotion-Adaptive Smart Home
