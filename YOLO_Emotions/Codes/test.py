@@ -1,72 +1,66 @@
 import cv2
-import time
+import mediapipe as mp
 from ultralytics import YOLO
 
-# Load YOLO models: face detection model and emotion recognition model
-face_model = YOLO('/YOLO_Emotions/Codes/weights/yolo_face.pt')  # Face detection model
-emotion_model = YOLO('/YOLO_Emotions/Codes/weights/yolo_emotion.pt')  # Emotion recognition model
+# 初始化 Mediapipe 的人脸检测器
+mp_face_detection = mp.solutions.face_detection
+mp_drawing = mp.solutions.drawing_utils
 
-# Open the camera
+# 加载表情识别模型
+emotion_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/yolo11s/best.pt')  # 表情识别模型
+
+# 打开摄像头
 cap = cv2.VideoCapture(0)
 
-# Set the video stream resolution to 1080p (1920x1080)
+# 设置视频流的分辨率为1080p (1920x1080)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
-def process_frame(frame):
-    # Run face detection on the frame, set confidence threshold and NMS IOU threshold
-    face_results = face_model(frame, conf=0.7, iou=0.5)
-    face_regions = []
-    boxes = []
-    
-    # Iterate through each detected face box
-    for face in face_results:
-        for box in face.boxes:
-            # Get the coordinates of the face bounding box
-            x1, y1, x2, y2 = map(int, box.xyxy[0])
-            # Extract the face region
-            face_regions.append(frame[y1:y2, x1:x2])
-            boxes.append((x1, y1, x2, y2))
-    
-    # Run emotion detection on the face regions, set confidence threshold and NMS IOU threshold
-    if len(face_regions) > 0:
-        emotion_results = emotion_model(face_regions, conf=0.7, iou=0.5)
-        
-        # Display the emotion detection results on the face regions
-        for i, emotion_result in enumerate(emotion_results):
-            annotated_face = emotion_result.plot()
-            x1, y1, x2, y2 = boxes[i]
-            # Put the annotated face region back into the original frame
-            frame[y1:y2, x1:x2] = annotated_face
-    
-    return frame
+# 使用 Mediapipe 的人脸检测器
+with mp_face_detection.FaceDetection(model_selection=0, min_detection_confidence=0.6) as face_detection:
+    while cap.isOpened():
+        # 从视频读取一帧
+        success, frame = cap.read()
 
-# Loop through video frames
-while cap.isOpened():
-    # Read a frame from the video
-    success, frame = cap.read()
+        if success:
+            # 将帧转换为 RGB 格式
+            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            # 在帧上运行 Mediapipe 人脸检测
+            results = face_detection.process(frame_rgb)
 
-    if not success:
-        print("Failed to capture frame. Exiting...")
-        break
+            if results.detections:
+                for detection in results.detections:
+                    # 获取人脸的边界框
+                    bboxC = detection.location_data.relative_bounding_box
+                    ih, iw, _ = frame.shape
+                    x1, y1 = int(bboxC.xmin * iw), int(bboxC.ymin * ih)
+                    x2, y2 = int((bboxC.xmin + bboxC.width) * iw), int((bboxC.ymin + bboxC.height) * ih)
 
-    # Calculate frame processing time to display FPS
-    start_time = time.time()
+                    # 提取人脸区域
+                    face_region = frame[y1:y2, x1:x2]
 
-    # Process the current frame
-    frame = process_frame(frame)
+                    # 在人脸区域内运行表情检测
+                    emotion_results = emotion_model(face_region, conf=0.5, iou=0.5)
 
-    # Calculate and display FPS
-    fps = 1 / (time.time() - start_time)
-    cv2.putText(frame, f'FPS: {fps:.2f}', (20, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+                    # 展示表情检测的结果
+                    if len(emotion_results) > 0:
+                        annotated_face = emotion_results[0].plot()
 
-    # Show the annotated frame (with faces and emotions)
-    cv2.imshow("Emotions Detection", frame)
+                        # 将注释后的脸部区域重新放回到原图上
+                        frame[y1:y2, x1:x2] = annotated_face
 
-    # Exit the loop if 'q' is pressed
-    if cv2.waitKey(1) & 0xFF in [27, ord('q')]:
-        break
+                    # 可选：在图像上绘制人脸检测框
+                    mp_drawing.draw_detection(frame, detection)
 
-# Release the video capture object and close the display window
+            # 展示带注释的帧（包含人脸和表情）
+            cv2.imshow("Emotions Detection", frame)
+
+            # 如果按下 'q' 键则退出循环
+            if cv2.waitKey(1) & 0xFF in [27, ord('q')]:
+                break
+        else:
+            break
+
+# 释放视频捕获对象并关闭显示窗口
 cap.release()
 cv2.destroyAllWindows()

@@ -2,8 +2,8 @@ import cv2
 from ultralytics import YOLO  # 确保这个import语句与您的实际环境相匹配
 
 # 加载YOLOv8模型：人脸检测模型和表情识别模型
-face_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/yolov8n_face.pt')  # 人脸检测模型
-emotion_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/best_yolo11x.pt')  # 表情识别模型
+face_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/yolo_face.pt')  # 人脸检测模型
+emotion_model = YOLO('/Users/muse/Documents/YOLO_Emotions/Test/weights/yolo11s/best.pt')  # 表情识别模型
 
 # 打开摄像头
 cap = cv2.VideoCapture(0)
