@@ -7,6 +7,12 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Preliminary PCB layout")
+		(date "2024-11-06")
+		(rev "0")
+		(company "Group 6")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(31 "B.Cu" signal)
@@ -90,7 +96,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_3x5.3"
 		(layer "F.Cu")
 		(uuid "0ec3d82b-4bad-4e4d-b431-9b9cba2266de")
-		(at 123.5 98)
+		(at 141.5 118)
 		(descr "SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics ")
 		(tags "Capacitor Electrolytic")
 		(property "Reference" "C2"
@@ -492,7 +498,7 @@
 	(footprint "LED_SMD:LED-APA102-2020"
 		(layer "F.Cu")
 		(uuid "1c7b546f-5ba1-474d-850e-702edf0c91e4")
-		(at 134 94.33)
+		(at 164.15 118.5)
 		(descr "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf")
 		(tags "LED RGB SPI")
 		(property "Reference" "D1"
@@ -835,7 +841,7 @@
 	(footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
 		(layer "F.Cu")
 		(uuid "3b6dbd76-d106-479b-8c52-63811f08823c")
-		(at 140.92 70.5)
+		(at 213.46 112.445)
 		(descr "TO-220-3, Vertical, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf")
 		(tags "TO-220-3 Vertical RM 2.54mm")
 		(property "Reference" "Q1"
@@ -1143,7 +1149,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 		(layer "F.Cu")
 		(uuid "8556c23a-0dc7-46a6-b833-c1bbc2db88ef")
-		(at 118.35 66.5)
+		(at 126.5 74.5)
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U1"
@@ -1158,7 +1164,7 @@
 			)
 		)
 		(property "Value" "LD1117S33TR_SOT223"
-			(at -4.5 -11 0)
+			(at 0 -18.5 0)
 			(layer "F.Fab")
 			(uuid "68522b1d-f614-4d41-b400-46092eed75c4")
 			(effects
@@ -1420,7 +1426,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_3x5.3"
 		(layer "F.Cu")
 		(uuid "a0790ec5-544c-4262-9cbd-f1bc2250c53e")
-		(at 133.5 65.5)
+		(at 189 74.5)
 		(descr "SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics ")
 		(tags "Capacitor Electrolytic")
 		(property "Reference" "C1"
@@ -1822,7 +1828,7 @@
 	(footprint "Connector_BarrelJack:BarrelJack_CLIFF_FC681465S_SMT_Horizontal"
 		(layer "F.Cu")
 		(uuid "d82cc3ef-1a94-42e5-b28f-5205ccf618cc")
-		(at 113.5 83.5)
+		(at 122 112.5)
 		(descr "Surface-mount DC Barrel Jack, https://www.cliffuk.co.uk/products/dcconnectors/FC681465S.pdf")
 		(tags "Power Jack SMT")
 		(property "Reference" "J1"
@@ -2212,7 +2218,7 @@
 	(footprint "Capacitor_SMD:CP_Elec_3x5.3"
 		(layer "F.Cu")
 		(uuid "f02126f7-87c8-4857-854b-c5474414a26c")
-		(at 133.5 76.5)
+		(at 187.5 112)
 		(descr "SMT capacitor, aluminium electrolytic, 3x5.3, Cornell Dubilier Electronics ")
 		(tags "Capacitor Electrolytic")
 		(property "Reference" "C3"
