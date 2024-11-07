@@ -2659,17 +2659,6 @@
 		)
 		(uuid a8dcad34-08f5-409d-ae40-9793803474fb)
 	)
-	(text "DC-DC Buck Converter to step down voltage to \nmatch the ultrasonic sensor's requirement."
-		(exclude_from_sim no)
-		(at 72.39 20.574 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3134f0c9-e20d-4623-9731-186a253c9591")
-	)
 	(text "LED Strip "
 		(exclude_from_sim no)
 		(at 80.264 117.348 0)
