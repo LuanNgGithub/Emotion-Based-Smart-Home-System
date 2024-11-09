@@ -1,3 +1,4 @@
+# ECE 411 FA24 - Team 6
 import RPi.GPIO as GPIO
 import time
 
