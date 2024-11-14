@@ -57,14 +57,14 @@
         <mxCell id="c96_3Ocna6pA6UWMz_O9-14" value="HC-SR04 Ultrasonic Sensor" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="404" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="c96_3Ocna6pA6UWMz_O9-15" value="8MP IMX219 Camera" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="c96_3Ocna6pA6UWMz_O9-15" value="Arducam 5MP USB Camera" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="334" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="c96_3Ocna6pA6UWMz_O9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="c96_3Ocna6pA6UWMz_O9-15" target="c96_3Ocna6pA6UWMz_O9-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="c96_3Ocna6pA6UWMz_O9-17" value="MIPI CSI-2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="190" y="324" width="80" height="30" as="geometry" />
+        <mxCell id="c96_3Ocna6pA6UWMz_O9-17" value="USB 2.0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="199" y="326" width="63" height="26" as="geometry" />
         </mxCell>
         <mxCell id="c96_3Ocna6pA6UWMz_O9-18" value="Analog" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="200" y="392" width="60" height="30" as="geometry" />
