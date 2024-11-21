@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Emotion-Adaptive-Smart-Home")
-		(date "2024-11-06")
+		(date "2024-11-20")
 		(rev "4")
 		(company "411 Group 6")
 		(comment 1 "Kamal Smith")
@@ -3308,8 +3308,20 @@
 		(uuid 6806c2d2-974e-41ca-9493-736357b80b11)
 	)
 	(rectangle
+		(start 130.81 109.22)
+		(end 156.21 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 6e0967ec-a2e3-495c-8259-c4a8e6f4a448)
+	)
+	(rectangle
 		(start 157.48 76.2)
-		(end 200.66 147.32)
+		(end 200.66 151.13)
 		(stroke
 			(width 0)
 			(type default)
@@ -3318,6 +3330,16 @@
 			(type none)
 		)
 		(uuid eee6c80c-b18c-46f3-b9d5-0f3c00626cf2)
+	)
+	(text "Pull-up resistors."
+		(exclude_from_sim no)
+		(at 139.446 119.38 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1366d854-5858-4571-9c1d-4d214922fc20")
 	)
 	(text "GPIO11"
 		(exclude_from_sim no)
@@ -3339,9 +3361,9 @@
 		)
 		(uuid "2318852a-dff8-4580-ac4b-707962e0d9aa")
 	)
-	(text "This is the 40 pin header that will \nbe connected to the header pins \non the Jetson Orin Nano via ribbon cable.\n"
+	(text "This is the 40 pin header that will \nbe connected to the header pins \non the Jetson Orin Nano via ribbon cable.\nThe Jetson will provide power as well as \nthe signal from the GPIO.\n"
 		(exclude_from_sim no)
-		(at 158.496 144.018 0)
+		(at 158.242 145.542 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3350,7 +3372,7 @@
 		)
 		(uuid "2acc7f7a-15d6-4714-8ec6-8d1678a1b50a")
 	)
-	(text "Ultrasonic sensor here. \nTakes in 3.3V - 5V input."
+	(text "Takes in 3.3V - 5V input."
 		(exclude_from_sim no)
 		(at 107.442 105.664 0)
 		(effects
@@ -3391,9 +3413,9 @@
 		)
 		(uuid "7bbe6823-8c64-4f17-9b65-3432d7243ebf")
 	)
-	(text "These will activate certain GPIO's\ndepending on the mood of the person"
+	(text "These will turn on based on GPIO's signal\ndepending on the mood of the person."
 		(exclude_from_sim no)
-		(at 87.122 177.292 0)
+		(at 85.09 177.292 0)
 		(effects
 			(font
 				(size 1.27 1.27)
