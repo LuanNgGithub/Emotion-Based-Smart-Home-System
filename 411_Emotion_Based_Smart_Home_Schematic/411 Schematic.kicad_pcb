@@ -82,7 +82,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "build3")
+			(outputdirectory "build2")
 		)
 	)
 	(net 0 "")
