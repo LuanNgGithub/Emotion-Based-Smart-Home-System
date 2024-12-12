@@ -82,7 +82,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "build3")
+			(outputdirectory "build")
 		)
 	)
 	(net 0 "")
@@ -2562,128 +2562,6 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-		(layer "F.Cu")
-		(uuid "5eab5d38-a6de-4182-b05a-d694564088ae")
-		(at 158 96)
-		(descr "Mounting Hole 3.5mm")
-		(tags "mounting hole 3.5mm")
-		(property "Reference" "REF**"
-			(at 0 -4.5 0)
-			(layer "F.SilkS")
-			(uuid "9a5197f8-c382-4767-99ee-f169e44014e4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 4.5 0)
-			(layer "F.Fab")
-			(uuid "51d6a20b-43e0-47ce-9e07-127bd290589a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89ed3a14-95a9-4056-8f61-2db8e2372046")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2f9bee58-be12-4b6d-b1a6-143f868574ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b69d4482-3be3-4ed0-a2f8-f21dcf2388b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.5 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "Cmts.User")
-			(uuid "037e03da-e822-443d-bc7c-aad15808c314")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.75 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "7300463c-a5af-4216-9ae6-9ab4bef9af16")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "ae770287-3651-407b-a743-37bbe8b68c5a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 3.9 3.9)
-			(drill 3.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "2e9313f7-f7da-4b59-874f-13fe09aa30f9")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "F.Cu" "F.Mask")
-			(uuid "fdcc2739-b772-4b54-a796-aab9826582c0")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "B.Cu" "B.Mask")
-			(uuid "f9f4cb68-5cd4-43e6-b60c-b1ee4bcb75d0")
-		)
-	)
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "6043daa3-9600-4ad8-8061-0d9b93e4c102")
@@ -3054,128 +2932,6 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-		(layer "F.Cu")
-		(uuid "71193135-371b-4274-bb55-7521ac0a5881")
-		(at 158 56)
-		(descr "Mounting Hole 3.5mm")
-		(tags "mounting hole 3.5mm")
-		(property "Reference" "REF**"
-			(at 0 -4.5 0)
-			(layer "F.SilkS")
-			(uuid "50e1783a-4376-4185-b638-4944b02e5f2b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 4.5 0)
-			(layer "F.Fab")
-			(uuid "b517eed4-3a5c-4fb6-82c7-e8de5a5dbc12")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1f55f0c0-7060-40dc-acd9-45c975afd1b0")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5e3b7523-7dc4-4254-9d8c-efb1ed18288a")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5a085329-07fd-4957-8424-14dafc3a08ac")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.5 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "Cmts.User")
-			(uuid "9599e407-c62d-4842-82f9-6f35f18e0824")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.75 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "da6850bd-f97e-40e6-9bf3-79abf59ba9dc")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "55893c7d-87c7-4aef-a0f7-8117b2e42874")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 3.9 3.9)
-			(drill 3.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "a763776c-137a-46dd-9ce6-99e64d1b6708")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "F.Cu" "F.Mask")
-			(uuid "febbf604-f01c-4517-8093-5b109e3ff1cf")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "B.Cu" "B.Mask")
-			(uuid "cc56f0c6-acea-40ac-a496-29d64240b15b")
-		)
-	)
 	(footprint "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical"
 		(layer "F.Cu")
 		(uuid "7a7db8bd-0798-4813-9e20-343b11c783f3")
@@ -3544,128 +3300,6 @@
 			(pinfunction "1")
 			(pintype "passive")
 			(uuid "83b727a2-85d1-4cb3-a209-c0cf452f5e99")
-		)
-	)
-	(footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-		(layer "F.Cu")
-		(uuid "a13269eb-bbca-4da3-80f8-fd0fcbf7630f")
-		(at 44 96)
-		(descr "Mounting Hole 3.5mm")
-		(tags "mounting hole 3.5mm")
-		(property "Reference" "REF**"
-			(at 0 -4.5 0)
-			(layer "F.SilkS")
-			(uuid "72e19995-4f35-4184-a388-b61ddd8efc92")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 4.5 0)
-			(layer "F.Fab")
-			(uuid "26691f63-59b8-4d44-b404-dd3e59d6e0fd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a877776e-1b55-476d-9854-12f448952726")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3032941e-4e9b-41bd-831d-f8c59124e87b")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6e8ce275-356c-4138-88b4-3c0fd85369f8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.5 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "Cmts.User")
-			(uuid "92a305c9-1af1-48b6-b80f-3bfd07b0d7ab")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.75 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "abf378b4-3b62-40f7-b5ff-a5d0f1188e6e")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "ee68f531-9f11-43f5-a63c-f45049b7c9d0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 3.9 3.9)
-			(drill 3.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "808dc0c1-3135-41f7-85b9-48c44d6e7e19")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "F.Cu" "F.Mask")
-			(uuid "bd08ab7c-b0d6-4002-9ab7-f8c04da656fd")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "B.Cu" "B.Mask")
-			(uuid "d640cd61-78b8-4855-98cf-97d904557dcd")
 		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical"
@@ -6230,128 +5864,6 @@
 			)
 		)
 	)
-	(footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-		(layer "F.Cu")
-		(uuid "d68e5983-1aa2-4595-b24a-3a2a0c4e4145")
-		(at 44 56)
-		(descr "Mounting Hole 3.5mm")
-		(tags "mounting hole 3.5mm")
-		(property "Reference" "REF**"
-			(at 0 -4.5 0)
-			(layer "F.SilkS")
-			(uuid "7dad81a2-22e2-40e6-85d2-b07de2104ba7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 4.5 0)
-			(layer "F.Fab")
-			(uuid "4ec182c9-d795-466c-8d96-83af25cc997c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "236a7167-ce17-4875-b111-a44f0578f5cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "06d343f3-21ff-4205-9c36-19743db7d7ee")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b7de87b9-c2bb-404e-8eef-0a94a804827d")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 3.5 0)
-			(stroke
-				(width 0.15)
-				(type solid)
-			)
-			(fill none)
-			(layer "Cmts.User")
-			(uuid "99c9b805-b9ec-418a-b747-2820c7332de4")
-		)
-		(fp_circle
-			(center 0 0)
-			(end 3.75 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "f2afb811-b41d-4672-bf0b-157db906137b")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(uuid "2bbfd04c-a7a2-4630-8e48-70279b5a63a7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole circle
-			(at 0 0)
-			(size 3.9 3.9)
-			(drill 3.5)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(uuid "8cf86158-e395-4762-a8be-0a626be6d4a2")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "F.Cu" "F.Mask")
-			(uuid "61afcab1-2daa-43d8-b4e9-ed55c2395073")
-		)
-		(pad "1" connect circle
-			(at 0 0)
-			(size 7 7)
-			(layers "B.Cu" "B.Mask")
-			(uuid "7e9c4228-23c6-4739-b454-87147bbf350b")
-		)
-	)
 	(footprint "TestPoint:TestPoint_Pad_1.0x1.0mm"
 		(layer "F.Cu")
 		(uuid "e1702c0f-f227-417b-aa2e-a837399841ae")
@@ -6978,6 +6490,28 @@
 			(uuid "d82fbdd1-431f-4891-9c7c-502cd1d6cf66")
 		)
 	)
+	(gr_circle
+		(center 44 56)
+		(end 45.75 56)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "0f25631e-cfe7-4225-9cde-7bcbea255ab5")
+	)
+	(gr_circle
+		(center 158 96)
+		(end 159.75 96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "25ccfe12-29d2-4b02-8f3f-a73466fe966b")
+	)
 	(gr_rect
 		(start 39.5 52)
 		(end 162.5 100)
@@ -6988,6 +6522,28 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "2ad5d6cb-6756-4cf9-a4df-9db3fed0c6ba")
+	)
+	(gr_circle
+		(center 158 56)
+		(end 159.75 56)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "4383458c-95d8-4f6b-883c-3927c3855b41")
+	)
+	(gr_circle
+		(center 44 96)
+		(end 45.75 96)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill solid)
+		(layer "Edge.Cuts")
+		(uuid "83af4972-dc1c-4b24-b477-3343ff501555")
 	)
 	(gr_text "Q1 (Base)"
 		(at 116.5 75.5 0)
